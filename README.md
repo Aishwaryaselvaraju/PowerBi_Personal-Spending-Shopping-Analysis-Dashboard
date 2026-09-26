@@ -8,139 +8,54 @@
 
 # Power BI Personal Spending & Shopping Analysis Dashboard
 
-An interactive Power BI dashboard designed to analyze personal spending and shopping behavior across categories, occupations, payment modes, and time.
+An interactive Power BI dashboard built to analyze personal spending and shopping behavior across categories, occupations, payment modes, and time.
 
 ## Overview
 
-This project analyzes transaction-level personal spending data to provide a clear view of spending patterns, payment behavior, occupation-wise spending, and monthly trends.
-
-The dashboard combines KPI cards, categorical comparisons, payment-mode analysis, and time-based visualizations to support both high-level summaries and detailed exploration.
+This project explores personal spending patterns using transaction-level data, giving a clear, at-a-glance view of where money goes, who is spending it, how they're paying, and how spending trends shift month over month. The dashboard combines KPI cards, categorical breakdowns, and a time trend to support both quick summaries and deeper drill-down analysis.
 
 ## Objectives
 
-* Summarize total spending and key transaction metrics
-* Analyze spending across different categories
-* Compare spending patterns across occupation groups
-* Understand payment behavior by payment mode
-* Track monthly spending trends
-* Enable occupation-based filtering for segment-level analysis
+- Summarize total spending and key transaction metrics in a single view
+- Break down spending by category (Food, Travel, Shopping, Grocery, Entertainment)
+- Compare spending across occupation groups (Student, Working Professional, Homemaker)
+- Analyze payment behavior by mode (UPI, Card, Cash, PhonePe)
+- Track how total spending trends across months
+- Enable filtering by occupation for segment-level analysis
 
 ## Tools & Technologies
 
-* **Power BI Desktop** — Dashboard design and report development
-* **Power Query** — Data cleaning and transformation
-* **DAX** — Calculated measures and aggregations
+- **Power BI Desktop** — dashboard design and report building
+- **Power Query** — data cleaning and transformation
+- **DAX** — calculated measures (totals, averages, counts)
 
-## Dashboard Features
+## Workflow
 
-### KPI Cards
+1. **Data Preparation** — imported and cleaned personal spending/transaction data using Power Query
+2. **Data Modeling** — structured the dataset around transactions, with supporting fields for category, occupation, age, payment mode, satisfaction, and month
+3. **DAX Measures** — created measures for Total Spending, Count of Transaction_ID, Average Satisfaction, and Count of Age
+4. **Visualization** — built KPI cards, horizontal bar charts, a column chart, a donut chart, and a trend line to represent spending from multiple angles
+5. **Interactivity** — added an occupation filter and a category legend to support segment-level drill-down
+6. **Debugging** — reviewed measure logic and category groupings to ensure totals reconciled correctly across visuals during testing
 
-* **Total Spending:** 1M
-* **Transactions:** 986
-* **Average Satisfaction:** 3.00
-* **Age Count:** 38
+## Key Features
 
-### Spending Analysis
-
-* **Total Spending by Category**
-
-  * Food
-  * Travel
-  * Shopping
-  * Grocery
-  * Entertainment
-
-* **Total Spending by Occupation**
-
-  * Student
-  * Working Professional
-  * Homemaker
-
-* **Transaction Count by Payment Mode**
-
-  * UPI
-  * Card
-  * Cash
-  * PhonePe
-
-* **Total Spending by Month**
-
-  * January
-  * February
-  * March
-  * April
-  * May
-  * June
-
-* **Occupation Filter**
-
-  * Filter the dashboard by Student, Working Professional, or Homemaker
-
-## Data & Workflow
-
-### 1. Data Preparation
-
-Imported and cleaned transaction-level spending data using Power Query.
-
-### 2. Data Modeling
-
-Structured the dataset with fields including:
-
-* Transaction ID
-* Category
-* Occupation
-* Age
-* Payment Mode
-* Satisfaction
-* Month
-* Spending Amount
-
-### 3. DAX Measures
-
-Created measures for:
-
-* Total Spending
-* Count of Transaction ID
-* Average Satisfaction
-* Count of Age
-
-### 4. Visualization
-
-Designed the dashboard using:
-
-* KPI Cards
-* Horizontal Bar Chart
-* Column Chart
-* Donut Chart
-* Line Chart
-* Occupation Slicer
-
-### 5. Validation & Debugging
-
-Reviewed measure calculations and category groupings to ensure values remained consistent across connected visuals.
+- **KPI Cards** — Total Spending (1M), Count of Transaction_ID (986), Average Satisfaction (3.00), Count of Age (38)
+- **Total Spending by Category** — horizontal bar chart ranking Food, Travel, Shopping, Grocery, and Entertainment
+- **Total Spending by Occupation** — column chart comparing Student, Working Professional, and Homemaker spending
+- **Count of Transaction_ID by Payment Mode** — donut chart breaking down UPI, Card, Cash, and PhonePe usage
+- **Total Spending by Month** — trend line tracking spending from January through June
+- **Occupation Filter** — slicer to isolate spending patterns by occupation group
 
 ## Skills Demonstrated
 
-* Power BI Dashboard Development
-* Power Query Data Cleaning
-* DAX Measure Creation
-* Personal Finance Analytics
-* Consumer Behavior Analysis
-* Data Visualization
-* Interactive Dashboard Design
-* KPI Development
-* Segment-Level Analysis
-* Data Validation
-
-
-```markdown
-![Power BI Personal Spending & Shopping Analysis Dashboard](dashboard-preview.png)
-```
-
+- Personal finance / consumer behavior dashboard design
+- DAX measure creation (totals, averages, counts)
+- Multi-visual storytelling (KPI cards, bar, column, donut, and line charts)
+- Interactive filtering for segment-level analysis
+- Validating measure accuracy across linked visuals
 
 ## Author
 
 **Aishwarya Selvaraju**
-
-* GitHub: [Aishwaryaselvaraju](https://github.com/Aishwaryaselvaraju)
-* LinkedIn: [Aishwarya Selvaraju](https://www.linkedin.com/)
+[GitHub](https://github.com/Aishwaryaselvaraju) · [LinkedIn](https://linkedin.com/in/aishwarya1413)
